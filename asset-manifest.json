@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/home/static/js/main.a3f6dd95.js",
+    "static/js/787.a92c39fc.chunk.js": "/home/static/js/787.a92c39fc.chunk.js",
+    "static/media/freertos.png": "/home/static/media/freertos.010d58649757cbc60a12.png",
+    "static/media/golang.png": "/home/static/media/golang.02b59b07770d9d807de5.png",
+    "static/media/c.png": "/home/static/media/c.88eb3e0c2506ee30866e.png",
+    "static/media/PlayfairDisplay.woff": "/home/static/media/PlayfairDisplay.ec070a29da1f957f72ee.woff",
+    "static/media/reactjs.png": "/home/static/media/reactjs.fd373eec9017cf21b26d.png",
+    "static/media/PlayfairDisplay.woff2": "/home/static/media/PlayfairDisplay.2aee28f09e336fddfc2c.woff2",
+    "static/media/Montserrat.woff": "/home/static/media/Montserrat.89faeb6da840a576f90e.woff",
+    "static/media/Montserrat.woff2": "/home/static/media/Montserrat.1c57a4b310025b122f28.woff2",
+    "static/media/nodejs.png": "/home/static/media/nodejs.4e97577b981eca678bfe.png",
+    "index.html": "/home/index.html",
+    "main.a3f6dd95.js.map": "/home/static/js/main.a3f6dd95.js.map",
+    "787.a92c39fc.chunk.js.map": "/home/static/js/787.a92c39fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a3f6dd95.js"
+  ]
+}
