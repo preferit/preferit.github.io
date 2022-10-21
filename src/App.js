@@ -31,7 +31,7 @@ function App() {
             }}><FadeInH3 style={{ marginBottom: '0px' }}>Preferit</FadeInH3><FadeInSpan style={{ fontStyle: "italic", marginLeft: '40px' }}> Det familjära konsultbolaget</FadeInSpan></div>
           </Header>
           <Main>
-            <Grid style={{ gridTemplateRows: '50px 200px auto', height: '100%' }}>
+            <Grid style={{ gridTemplateRows: '50px 100px auto', height: '100%' }}>
               <Header style={{
                 flexDirection: 'column', justifyContent: 'flex-start',
                 alignItems: 'center'
@@ -56,8 +56,7 @@ function App() {
                   flexDirection: 'row',
                   justifyContent: 'space-evenly',
                   flexWrap: 'wrap',
-                  height: '100%',
-                  alignItems: 'flex-start'
+                  alignItems: 'center'
                 }}>
                   <ClickShowHideSpanIcon content={['IoT access control systems', 'Cloud service with automated CI', 'Upgrade service for cloud connected cameras']} src={golang} alt={golang}>
                   </ClickShowHideSpanIcon>
