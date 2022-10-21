@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
 import { React, useState, useContext } from 'react';
 import { DropdownContext } from './App';
+import closeIcon from './img/close.png'
 
 export const AppStyle = createGlobalStyle`
     @font-face {
@@ -320,7 +321,7 @@ export const FadeInDiv = styled.div`
 export const JigglyIconOnHover = styled.img`
   height: 50px;
   width: auto;
-  margin: 50px;
+  margin: 25px;
   cursor: pointer;
     &:hover {
         animation: shake 1s;
@@ -341,6 +342,7 @@ export const JigglyIconOnHover = styled.img`
         100% { transform: translate(1px, -2px) rotate(-1deg); }
     }
 `
+
 export const JigglyIconJiggleFasterOnHover = styled.img`
         animation: shake 4s;
         animation-iteration-count: infinite;
@@ -376,7 +378,8 @@ export const ClickShowHideSpanIcon = ({ src, alt, content, children, id, ...styl
       display: value.context && !open ? 'none' : 'flex'
     }}
       onClick={() => { setOpen(!open); value.setContext(!value.context) }}>
-      <JigglyIconOnHover src={src} alt={alt} ></JigglyIconOnHover >
+      <JigglyIconOnHover src={src} alt={alt} style={{ margin: open ? '0px' : '25px' }} ></JigglyIconOnHover >
+      {open && <JigglyIconOnHover style={{ margin: '0px', height: '25px', width: 'auto', }} src={closeIcon} alt='close' ></JigglyIconOnHover >}
       {open && content.map((item, key) => {
         return <FadeInP style={{ maxWidth: '90%' }} key={key}>{item}</FadeInP>;
       })}
