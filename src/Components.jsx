@@ -6,7 +6,6 @@ import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
 import { React, useState, useContext } from 'react';
 import { DropdownContext } from './App';
-import closeIcon from './img/close.png'
 
 export const AppStyle = createGlobalStyle`
     @font-face {
@@ -375,14 +374,21 @@ export const ClickShowHideSpanIcon = ({ src, alt, content, children, id, ...styl
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'flex-start',
-      display: value.context && !open ? 'none' : 'flex'
+      display: value.context && !open ? 'none' : 'flex',
+      width: open ? '100%' : '',
     }}
       onClick={() => { setOpen(!open); value.setContext(!value.context) }}>
       <JigglyIconOnHover src={src} alt={alt} style={{ margin: open ? '0px' : '25px' }} ></JigglyIconOnHover >
-      {open && <JigglyIconOnHover style={{ margin: '0px', height: '25px', width: 'auto', }} src={closeIcon} alt='close' ></JigglyIconOnHover >}
-      {open && content.map((item, key) => {
-        return <FadeInP style={{ maxWidth: '90%' }} key={key}>{item}</FadeInP>;
-      })}
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+      }}>
+        {open && content.map((item, key) => {
+          return <FadeInP style={{ marginLeft: "5px" }} key={key}>{item}</FadeInP>;
+        })}
+      </div>
     </span>
   );
 
@@ -398,8 +404,3 @@ export const EasterEgg = () => {
     </div>
   )
 }
-
-
-
-
-
