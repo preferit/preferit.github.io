@@ -58,7 +58,7 @@ function App() {
                   flexWrap: 'wrap',
                   alignItems: 'center'
                 }}>
-                  <ClickShowHideSpanIcon content={['IoT access control systems', 'Cloud service with automated CI', 'Upgrade service for cloud connected cameras']} src={golang} alt={golang}>
+                  <ClickShowHideSpanIcon content={['IoT access control systems', 'Cloud service with automated CI', 'Upgrade service for cloud connected devices']} src={golang} alt={golang}>
                   </ClickShowHideSpanIcon>
                   <ClickShowHideSpanIcon content={['Backend for video hosting system in the cloud']} src={nodejs} alt="nodejs" >
                   </ClickShowHideSpanIcon>
@@ -68,13 +68,13 @@ function App() {
                   </ClickShowHideSpanIcon>
                   <ClickShowHideSpanIcon content={['Platform for building business intelligence solutions']} src={js} alt="js">
                   </ClickShowHideSpanIcon>
-                  <ClickShowHideSpanIcon content={['TODO']} src={cpp} alt="cpp">
+                  <ClickShowHideSpanIcon content={['Keyless security']} src={cpp} alt="cpp">
                   </ClickShowHideSpanIcon>
-                  <ClickShowHideSpanIcon content={['TODO']} src={freertos} alt="freertos">
+                  <ClickShowHideSpanIcon content={['Sensor surveillance', 'Device automation']} src={freertos} alt="freertos">
                   </ClickShowHideSpanIcon>
-                  <ClickShowHideSpanIcon content={['TODO']} src={c} alt="c">
+                  <ClickShowHideSpanIcon content={['Temperature control of devices', 'Motor control for devices', 'Image processing', 'Camera motor control']} src={c} alt="c">
                   </ClickShowHideSpanIcon>
-                  <ClickShowHideSpanIcon content={['TODO']} src={reactjs} alt="reactjs">
+                  <ClickShowHideSpanIcon content={['Time reporting application']} src={reactjs} alt="reactjs">
                   </ClickShowHideSpanIcon>
                 </FadeInDiv>
               </Footer>
