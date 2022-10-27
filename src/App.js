@@ -9,6 +9,11 @@ import github from './img/github.png'
 import reactjs from './img/reactjs.png'
 import sproutcore from './img/sproutcore.png'
 import js from './img/js.png'
+import python from './img/python.png'
+import angular from './img/angular.png'
+import vue from './img/vue.png'
+import raspberrypie from './img/raspberrypie.png'
+import android from './img/android.png'
 import { Grid, Header, Main, Footer, AppStyle, FadeInFadeOutH1, FadeInH3, FadeInDiv, JigglyIconJiggleFasterOnHover, ClickShowHideSpanIcon, FadeInFadeOutP, FadeInSpan, EasterEgg } from './Components';
 
 export const DropdownContext = createContext();
@@ -62,19 +67,29 @@ function App() {
                   </ClickShowHideSpanIcon>
                   <ClickShowHideSpanIcon content={['Backend for video hosting system in the cloud']} src={nodejs} alt="nodejs" >
                   </ClickShowHideSpanIcon>
-                  <ClickShowHideSpanIcon content={['A multi-user platform for analysis of proteomics data']} src={java} alt="java">
+                  <ClickShowHideSpanIcon content={['A multi-user platform for analysis of proteomics data', 'Processing of sensor readings from sensors in a production line factory']} src={java} alt="java">
                   </ClickShowHideSpanIcon>
                   <ClickShowHideSpanIcon content={['Web application for planning surveillance']} src={sproutcore} alt="sproutcore">
                   </ClickShowHideSpanIcon>
-                  <ClickShowHideSpanIcon content={['Platform for building business intelligence solutions']} src={js} alt="js">
+                  <ClickShowHideSpanIcon content={['Platform for building business intelligence solutions', 'Web interface for command line tools in a cluster environment']} src={js} alt="js">
                   </ClickShowHideSpanIcon>
                   <ClickShowHideSpanIcon content={['Keyless security']} src={cpp} alt="cpp">
                   </ClickShowHideSpanIcon>
                   <ClickShowHideSpanIcon content={['Sensor surveillance', 'Device automation']} src={freertos} alt="freertos">
                   </ClickShowHideSpanIcon>
-                  <ClickShowHideSpanIcon content={['Temperature control of devices', 'Motor control for devices', 'Image processing', 'Camera motor control']} src={c} alt="c">
+                  <ClickShowHideSpanIcon content={['Temperature control of devices', 'Motor control for devices', 'Image processing', 'Camera motor control', 'BLE IoT solution for monitoring of combustion engines', 'Train signal simulator for simulation of train traffic']} src={c} alt="c">
                   </ClickShowHideSpanIcon>
                   <ClickShowHideSpanIcon content={['Time reporting application']} src={reactjs} alt="reactjs">
+                  </ClickShowHideSpanIcon>
+                  <ClickShowHideSpanIcon content={['Evolutionary particle swarm optimization of time scheduling']} src={python} alt="reactjs">
+                  </ClickShowHideSpanIcon>
+                  <ClickShowHideSpanIcon content={['Data-driven military planning, crisis situation assessment and risk calculation', 'E-Shop with payment services through Debitech', 'Automatic test environment']} src={angular} alt="angular">
+                  </ClickShowHideSpanIcon>
+                  <ClickShowHideSpanIcon content={['Webshop for a circular economy clothing shop']} src={vue} alt="vue">
+                  </ClickShowHideSpanIcon>
+                  <ClickShowHideSpanIcon content={['IoT solution for urban farming environments']} src={raspberrypie} alt="raspberrypie">
+                  </ClickShowHideSpanIcon>
+                  <ClickShowHideSpanIcon content={['Solar charger for android tablets']} src={android} alt="android">
                   </ClickShowHideSpanIcon>
                 </FadeInDiv>
               </Footer>
