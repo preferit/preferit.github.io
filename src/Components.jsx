@@ -386,7 +386,7 @@ export const ClickShowHideSpanIcon = ({ src, alt, content, children, id, ...styl
         justifyContent: 'flex-start',
       }}>
         {open && content.map((item, key) => {
-          return <FadeInP style={{ marginLeft: "5px" }} key={key}>{item}</FadeInP>;
+          return <FadeInP style={{ marginLeft: "5px", marginBottom: '2px' }} key={key}>{item}</FadeInP>;
         })}
       </div>
     </span>
