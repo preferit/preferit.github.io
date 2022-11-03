@@ -320,7 +320,7 @@ export const FadeInDiv = styled.div`
 export const JigglyIconOnHover = styled.img`
   height: 50px;
   width: auto;
-  margin: 50px;
+  margin: 25px;
   cursor: pointer;
     &:hover {
         animation: shake 1s;
@@ -341,6 +341,7 @@ export const JigglyIconOnHover = styled.img`
         100% { transform: translate(1px, -2px) rotate(-1deg); }
     }
 `
+
 export const JigglyIconJiggleFasterOnHover = styled.img`
         animation: shake 4s;
         animation-iteration-count: infinite;
@@ -373,13 +374,21 @@ export const ClickShowHideSpanIcon = ({ src, alt, content, children, id, ...styl
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'flex-start',
-      display: value.context && !open ? 'none' : 'flex'
+      display: value.context && !open ? 'none' : 'flex',
+      width: open ? '100%' : '',
     }}
       onClick={() => { setOpen(!open); value.setContext(!value.context) }}>
-      <JigglyIconOnHover src={src} alt={alt} ></JigglyIconOnHover >
-      {open && content.map((item, key) => {
-        return <FadeInP style={{ maxWidth: '90%' }} key={key}>{item}</FadeInP>;
-      })}
+      <JigglyIconOnHover src={src} alt={alt} style={{ margin: open ? '0px' : '25px' }} ></JigglyIconOnHover >
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+      }}>
+        {open && content.map((item, key) => {
+          return <FadeInP style={{ marginLeft: "5px", marginBottom: '2px' }} key={key}>{item}</FadeInP>;
+        })}
+      </div>
     </span>
   );
 
@@ -395,8 +404,3 @@ export const EasterEgg = () => {
     </div>
   )
 }
-
-
-
-
-
